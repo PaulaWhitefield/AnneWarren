@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title>{% if title %}{{ title }} - {% endif %}Anne Warren</title>
+		<title><?php if( isset( $page_title ) && $page_title ) echo $page_title . " - "; ?>Anne Warren</title>
 		
 		<link rel="stylesheet" type="text/css" href="https://w3css.staticly.ict.rocks/4.15/w3.css">
 		<link rel="stylesheet" type="text/css" href="https://webfonts.staticly.ict.rocks/nunito/nunito.css">
@@ -44,7 +44,7 @@
 			</div>
 
 			<div class="w3-padding w3-col m8 font-nunito">
-				{{ content | safe }}
+				<?php if( isset( $page_content ) && is_callable( $page_content ) ) $page_content(); ?>
 			</div>
 		</section>
 
