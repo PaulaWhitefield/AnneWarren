@@ -1,13 +1,17 @@
+---
+content_placeholder: {{ content }}
+storage_domain: staticly.cc
+---
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title><?php if( isset( $page_title ) && $page_title ) echo $page_title . " - "; ?>Anne Warren</title>
+		<title><?php if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo $metadata['page_title'] . " - "; ?>Anne Warren</title>
 		
-		<link rel="stylesheet" type="text/css" href="https://w3css.staticly.ict.rocks/4.15/w3.css">
-		<link rel="stylesheet" type="text/css" href="https://webfonts.staticly.ict.rocks/nunito/nunito.css">
+		<link rel="stylesheet" type="text/css" href="https://w3css.--- metadata.storage_domain ---/4.15/w3.css">
+		<link rel="stylesheet" type="text/css" href="https://webfonts.--- metadata.storage_domain ---/nunito/nunito.css">
 	</head>
 	
 	<body>
@@ -30,7 +34,7 @@
 			</div>
 		</nav>
 		
-		<header class="w3-padding-64" style="background-image: url('/assets/images/anne-working-on-her-laptop-800x533.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+		<header class="w3-padding-64" style="background-image: url('https://images.--- metadata.storage_domain ---/backgrounds/anne-working-on-her-laptop-800x533.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
 			<div class="w3-padding-64">
 				<div class="w3-padding-32">
 
@@ -44,7 +48,7 @@
 			</div>
 
 			<div class="w3-padding w3-col m8 font-nunito">
-				<?php if( isset( $page_content ) && is_callable( $page_content ) ) $page_content(); ?>
+				{{ content }}
 			</div>
 		</section>
 
