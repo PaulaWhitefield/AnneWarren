@@ -1,6 +1,6 @@
 ---
 content_placeholder: {{ content }}
-storage_domain: staticly.cc
+storage_domain: storage.dah5.me.uk
 ---
 <!DOCTYPE html>
 <html lang="en">
