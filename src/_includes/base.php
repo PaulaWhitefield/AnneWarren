@@ -1,6 +1,5 @@
 ---
 content_placeholder: {{ content }}
-storage_domain: storage.dah5.me.uk
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -10,8 +9,8 @@ storage_domain: storage.dah5.me.uk
 		
 		<title><?php if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo $metadata['page_title'] . " - "; ?>Anne Warren</title>
 		
-		<link rel="stylesheet" type="text/css" href="https://w3css.--- metadata.storage_domain ---/4.15/w3.css">
-		<link rel="stylesheet" type="text/css" href="https://webfonts.--- metadata.storage_domain ---/nunito/nunito.css">
+		<link rel="stylesheet" type="text/css" href="/assets/w3css/4.15/w3.css">
+		<link rel="stylesheet" type="text/css" href="/assets/webfonts/nunito/nunito.css">
 	</head>
 	
 	<body>
@@ -34,7 +33,7 @@ storage_domain: storage.dah5.me.uk
 			</div>
 		</nav>
 		
-		<header class="w3-padding-64" style="background-image: url('https://images.--- metadata.storage_domain ---/backgrounds/anne-working-on-her-laptop-800x533.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+		<header class="w3-padding-64" style="background-image: url('/assets/images/backgrounds/anne-working-on-her-laptop-800x533.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
 			<div class="w3-padding-64">
 				<div class="w3-padding-32">
 
@@ -54,7 +53,7 @@ storage_domain: storage.dah5.me.uk
 
         <footer class="w3-center w3-small">
             <div class="w3-auto">
-                Site by <a href="https://www.paulawhitefield.ict.rocks" target="_blank">Paula Whitefield</a>.
+                Site by <a href="https://www.paulawhitefield.com" target="_blank">Paula Whitefield</a>.
             </div>
         </footer>
 	</body>
