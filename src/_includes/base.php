@@ -54,7 +54,7 @@ content_placeholder: {{ content }}
         <footer class="w3-center w3-small">
             <div class="w3-auto">
 				Copyright &copy; Anne Warren.<br>
-                Site by <a href="https://paulawhitefield.echoverse.cc" target="_blank">Paula Whitefield</a>.
+                Site by <a href="https://paulawhitefield.bypw.me" target="_blank">Paula Whitefield</a>.
             </div>
         </footer>
 	</body>
